@@ -1,0 +1,20 @@
+Q: How did viewing a diff between two versions of the file help you see the bug that was introduced?
+A: In this exercise, it was actually hard to spot, because of lack of context with the source code and eyeballing the diffs, but I know this is a valuable thing to do with better context and tools!
+
+Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+A: By saving *working* versions of a file, I can then experiment on the program by changing the code or refactoring, but revert to the previous version easily if my experimental version isn't an improvement. I can also more easily find and revisit the design decisions and incremental changes I've made along the way.
+
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+A: Automatic saves seem better for non-programmatic documents, like writing a report or creating a presentation; in these cases, building / comiling is less important, and because the files are inherently less modular than code (and more complicated than text files), auto-save can save you from a crash without causing down-stream problems. For coding, manual commit allows you to choose logical chunks to save, which is espeically helpful on multi-person projects. You just have to remember to save / commit at the right time.
+
+Q: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+A: Because they are designed to work for different types of files. Code projects generally contain interrelated files, while documents are frequently stand-alone.
+
+Q: How can you use the commands git log and git diff to view the history of files?
+A: git log shows the commit history and comments; git diff shows the changes between two versions
+
+Q: How might using version control make you more confident to make changes that could break something?
+A: Because you know you're able to revert to a version that works!
+
+Q: Now that you have your workspace set up, what do you want to try using Git for?
+A: My scheduler project!
