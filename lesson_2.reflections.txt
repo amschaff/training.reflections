@@ -1,0 +1,10 @@
+Q: What happens when you initialize a repository? Why do you need to do it?
+A: Adds git artefacts to the directory to begin tracking; prepares for committing & tracking status
+
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+A: Provides a go-between between the two concepts: allows you to build a commit one piece at a time, such as adding files from multiple directories that may be part of the logical changes; also allows you to keep some files out of the commit set.
+
+
+git config --global core.editor "'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
