@@ -4,7 +4,17 @@ A: Adds git artefacts to the directory to begin tracking; prepares for committin
 Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
 A: Provides a go-between between the two concepts: allows you to build a commit one piece at a time, such as adding files from multiple directories that may be part of the logical changes; also allows you to keep some files out of the commit set.
 
+Q: How can you use the staging area to make sure you have one commit per logical change?
+A: Only add files for a single logical change to the staging area at a time
 
-git config --global core.editor "'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w"
-git config --global push.default upstream
-git config --global merge.conflictstyle diff3
+Q: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+A: Adding new features, especially when one version is already in production; multiple people working on different aspects of the program
+
+Q: How do the diagrams help you visualize the branch structure?
+A: Show visually which commit are happening on each branch, so you can see the lineage & easily tell which functions are where.
+
+Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A: The code from both branches is combined in the most logical way, as determined by the git diff/merge features. They look the way they do because the merge commit has two parents - one from each of the contributing branches - rather than only one.
+
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A: Pros: Auto-merging saves time & tedium; Cons: Auto-merge may miss some conflicts, or call out as conflicts things that are easily identified with context knowledge.
